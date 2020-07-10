@@ -1,0 +1,14 @@
+html{
+    background-color: antiquewhite;
+}
+h1 {
+    font-family: 'Tenali Ramakrishna';
+    text-align: center;
+    height: 100%;
+}
+#generate {
+    float: center;
+}
+p {
+    font-family: 'Dosis';
+}
