@@ -1,14 +1,30 @@
 html{
-    background-color: antiquewhite;
+    background-color: #E6E6FA;
+    font-family: 'Dosis';
 }
 h1 {
     font-family: 'Tenali Ramakrishna';
     text-align: center;
     height: 100%;
 }
-#generate {
-    float: center;
+#generate_div {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    text-align: center;
 }
-p {
-    font-family: 'Dosis';
+.add_div {
+    padding-top: 3%;
+    padding-bottom: 3%;
+    text-align: right;
+}
+#results  {
+    padding-top: 5%;
+    justify-content: space-evenly;
+}
+.meal {
+    float: left;
+}
+input {
+    height: 5%;
+    width: 5%;
 }

@@ -1,20 +1,49 @@
 <!DOCTYPE html>
 <html>
     <link rel="stylesheet" type="text/css" href="../static/css/styles.css" />
+    <script src="static/js/scripts.js"></script>
     <head>
-        <link href='https://fonts.googleapis.com/css?family=Tenali Ramakrishna' rel='stylesheet'>
-        <link href='https://fonts.googleapis.com/css?family=Dosis' rel='stylesheet'>
-          <!-- Fonts to support Material Design -->
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
-        <!-- Icons to support Material Design -->
-        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+        <link href='https://fonts.googleapis.com/css?family=Tenali Ramakrishna' rel='stylesheet'/>
+        <link href='https://fonts.googleapis.com/css?family=Dosis' rel='stylesheet'/>
+        <link rel="shortcut icon" href="#">
+        <div hidden>Icons made by <a href="https://www.flaticon.com/authors/xnimrodx" title="xnimrodx">xnimrodx</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
     </head>
-    <body>
+    <body onload="onload()">
         <title>Ăn gì?</title>
-        <br>
-        <br>
+        <div class="add_div">
+            <label>Add Protein</label>
+            <input type="image" id="add_protein" onclick="add()" src="static/media/add.svg"/>
+            <br>
+            <label>Add Veggie</label>
+            <input type="image" id="add_veggie" onclick="add()" src="static/media/add.svg"/>
+            <br>
+            <label>Add Soup</label>
+            <input type="image" id="add_soup" onclick="add()" src="static/media/add.svg"/>
+        </div>
         <h1>What's for dinner?</h1>
-        <br>
-        <Button variant="contained" id="generate">Hôm nay ăn gì?</Button>
+        <div id="generate_div">
+            <button variant="contained" id="generate" onclick="generate()">Hôm nay ăn gì?</button>
+        </div>
+        <div id="results">
+            <div class="meal" id="protein">
+                <span>Món Mặn</span>
+                <p id="protein_p">{{protein}}</p>
+
+            </div>
+            <div class="meal" id="veggie">
+                <span>Món Rau</span>
+                <p id="veggie_p">{{veggie}}</p>
+
+            </div>
+            <div class="meal" id="soup">
+                <span>Món Canh</span>
+                <p id="soup_p">{{soup}}</p>
+
+            </div>
+            <div class="meal" id="special">
+                <span>Món Một Mình</span>
+
+            </div>
+        </div>
     </body>
 </html>
